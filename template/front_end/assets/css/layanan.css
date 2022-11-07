@@ -1,0 +1,466 @@
+.produk-layanan {
+  margin-top: 5%;
+}
+
+.paket {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+.container-paket {
+  min-height: 100vh;
+  padding: 20px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card-home {
+  width: 280px;
+  height: 520px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  background: #fff;
+  transition: all 0.5s ease;
+  cursor: pointer;
+  user-select: none;
+  z-index: 10;
+  overflow: hidden;
+}
+
+.card .backgroundEffect {
+  bottom: 0;
+  height: 0px;
+  width: 100%;
+}
+
+.card:hover {
+  color: #fff;
+  transform: scale(1.025);
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 5px 10px;
+}
+
+.card:hover .backgroundEffect {
+  bottom: 0;
+  height: 320px;
+  width: 100%;
+  position: absolute;
+  z-index: -1;
+  background: #401101;
+  animation: popBackground 0.3s ease-in;
+}
+
+@keyframes popBackground {
+  0% {
+    height: 20px;
+    border-top-left-radius: 50%;
+    border-top-right-radius: 50%;
+  }
+
+  50% {
+    height: 80px;
+    border-top-left-radius: 75%;
+    border-top-right-radius: 75%;
+  }
+
+  75% {
+    height: 160px;
+    border-top-left-radius: 85%;
+    border-top-right-radius: 85%;
+  }
+
+  100% {
+    height: 320px;
+    border-top-left-radius: 100%;
+    border-top-right-radius: 100%;
+  }
+}
+
+.card .pic {
+  position: relative;
+}
+
+.card .pic img {
+  width: 100%;
+  height: 280px;
+  object-fit: cover;
+}
+
+.card .date .day {
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.card .date .month,
+.card .date .year {
+  font-size: 10px;
+}
+
+.card .text-muted {
+  font-size: 12px;
+}
+
+.card:hover .text-muted {
+  color: #fff !important;
+}
+
+.card .content {
+  padding: 0 20px;
+}
+
+.card .content .btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 5px 10px;
+  background-color: #1b9ce3;
+  border-radius: 25px;
+  font-size: 12px;
+  border: none;
+}
+
+.card:hover .content .btn {
+  background: #fff;
+  color: #401101;
+  box-shadow: #0000001a 0px 3px 5px;
+}
+
+.card .content .btn .fas {
+  font-size: 10px;
+  padding-left: 5px;
+}
+
+.card .content .foot .admin {
+  color: #1b9ce3;
+  font-size: 12px;
+}
+
+.card:hover .content .foot .admin {
+  color: #fff;
+}
+
+.card .content .foot .icon {
+  font-size: 12px;
+}
+
+/* layananan card */
+.produk-layanan {
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  background-color: #fff;
+  min-height: 100vh;
+}
+
+.owl-carousel .owl-item {
+  transition: all 0.3s ease-in-out;
+}
+
+.owl-carousel .owl-item .card-produk {
+  padding: 30px;
+  position: relative;
+}
+
+.owl-carousel .owl-stage-outer {
+  overflow-y: auto !important;
+  padding-bottom: 40px;
+}
+
+.owl-carousel .owl-item img {
+  height: 200px;
+  object-fit: cover;
+  border-radius: 6px;
+}
+
+.owl-carousel .owl-item .card-produk .name {
+  position: absolute;
+  bottom: -20px;
+  left: 33%;
+  color: #101c81;
+  font-size: 1.1rem;
+  font-weight: 600;
+  background-color: aquamarine;
+  padding: 0.3rem 0.4rem;
+  border-radius: 5px;
+  box-shadow: 2px 3px 10px #5e6279;
+}
+
+.owl-carousel .owl-item .card-produk {
+  /* opacity: 0.2; */
+  transform: scale3d(0.8, 0.8, 0.8);
+  transition: all 0.3s ease-in-out;
+}
+
+.owl-carousel .owl-item.active.center .card-produk {
+  opacity: 1;
+  transform: scale3d(1, 1, 1);
+}
+
+.owl-carousel .owl-dots {
+  display: inline-block;
+  width: 100%;
+  text-align: center;
+}
+
+.owl-theme .owl-dots .owl-dot span {
+  height: 20px;
+  background: #2a6ba3 !important;
+  border-radius: 2px !important;
+  opacity: 0.8;
+}
+
+.owl-theme .owl-dots .owl-dot.active span,
+.owl-theme .owl-dots .owl-dot:hover span {
+  height: 13px;
+  width: 13px;
+  opacity: 1;
+  transform: translateY(2px);
+  background: #83b8e7 !important;
+}
+
+@media (min-width: 480.6px) and (max-width: 575.5px) {
+  .owl-carousel .owl-item .card-produk .name {
+    left: 24%;
+  }
+}
+
+@media (max-width: 360px) {
+  .owl-carousel .owl-item .card-produk .name {
+    left: 30%;
+  }
+}
+/*  */
+
+/* modal  */
+.trigger {
+  background-color: black;
+  color: red;
+}
+
+.modal,
+.fade,
+.show {
+  background-color: lightgray;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.modal-content {
+  background: transparent;
+  border: none;
+  padding: 0 19px;
+}
+
+.close {
+  position: relative;
+  top: 48px;
+  left: 13px;
+  z-index: 1;
+  font-size: 30px;
+  font-weight: 100;
+  line-height: 1;
+  color: gray;
+}
+
+.modal-header {
+  border: none;
+}
+
+.modal-body {
+  border: none;
+  background-color: white;
+  padding-bottom: 5px;
+}
+
+.logo {
+  width: 100px;
+  height: 100px;
+  /* background: url(https://res.cloudinary.com/dxfq3iotg/image/upload/v1576118709/83225325-beauty-spa-logo-design.jpg); */
+  background-size: contain;
+  position: relative;
+  right: 14px;
+}
+
+/* .off {
+  margin-top: 25px;
+  width: 50px;
+  height: 50px;
+  background: url(https://res.cloudinary.com/dxfq3iotg/image/upload/v1576118728/30-off-white-background-special-offer-great-offer-sale-thirty-percent-off-promotional_59529-691.jpg);
+  background-size: contain;
+} */
+
+.heading {
+  justify-content: space-between;
+}
+
+.modal-footer {
+  border: none;
+}
+
+.btn.focus,
+.btn:focus {
+  outline: 0;
+  box-shadow: none !important;
+}
+
+.close.focus,
+.close:focus {
+  outline: 0;
+  box-shadow: none !important;
+}
+
+.hurry {
+  margin-top: 30px;
+}
+
+.booking {
+  background-color: white;
+  border: 2px solid lightgray;
+  width: 150px;
+  border-radius: 0px;
+}
+
+.booking:hover {
+  background-color: #eceff1;
+  border: 2px solid black;
+}
+
+@media (min-width: 599px) {
+  .modal-dialog {
+    max-width: 47rem;
+  }
+
+  .details {
+    padding: 0 114px;
+  }
+
+  .off {
+    position: absolute;
+    bottom: 150px;
+    left: 25px;
+  }
+}
+
+/* akhir  modal */
+
+/* tim */
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
+
+.tim {
+  padding: 2%;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  min-height: 100vh;
+  background: linear-gradient(to bottom, #401101, #401101);
+}
+
+.con-tim {
+  margin-top: 100px;
+}
+
+.con-tim .row .col-lg-4 {
+  display: flex;
+  justify-content: center;
+  padding: 2%;
+}
+
+.card-tim {
+  position: relative;
+  padding: 0;
+  margin: 0 !important;
+  border-radius: 20px;
+  overflow: hidden;
+  max-width: 280px;
+  max-height: 340px;
+  cursor: pointer;
+  border: none;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.card-tim .card-image {
+  width: 100%;
+  max-height: 340px;
+}
+
+.card-tim .card-image img {
+  width: 100%;
+  max-height: 340px;
+  object-fit: cover;
+}
+
+.card-tim .card-content {
+  position: absolute;
+  bottom: -180px;
+  color: #fff;
+  background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(15px);
+  min-height: 140px;
+  width: 100%;
+  transition: bottom 0.4s ease-in;
+  box-shadow: 0 -10px 10px rgba(255, 255, 255, 0.1);
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.card-tim:hover .card-content {
+  bottom: 0px;
+}
+
+.card-tim:hover .card-content h4,
+.card-tim:hover .card-content h5 {
+  transform: translateY(10px);
+  opacity: 1;
+}
+
+.card-tim .card-content h4,
+.card-tim .card-content h5 {
+  font-size: 1.1rem;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  text-align: center;
+  transition: 0.8s;
+  font-weight: 500;
+  opacity: 0;
+  transform: translateY(-40px);
+  transition-delay: 0.2s;
+}
+
+.card-tim .card-content h5 {
+  transition: 0.5s;
+  font-weight: 200;
+  font-size: 0.8rem;
+  letter-spacing: 2px;
+}
+
+.card-tim .card-content .social-icons {
+  list-style: none;
+  padding: 0;
+}
+
+.card-tim .card-content .social-icons li {
+  margin: 10px;
+  transition: 0.5s;
+  transition-delay: calc(0.15s * var(--i));
+  transform: translateY(50px);
+}
+
+.card-tim:hover .card-content .social-icons li {
+  transform: translateY(20px);
+}
+
+.card-tim .card-content .social-icons li a {
+  color: #fff;
+}
+
+.card-tim .card-content .social-icons li a span {
+  font-size: 1.3rem;
+}
+
+@media (max-width: 991.5px) {
+  .con-tim {
+    margin-top: 20px;
+  }
+
+  .con-tim .row .col-lg-4 {
+    margin: 20px 0px;
+  }
+}

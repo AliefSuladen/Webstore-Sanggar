@@ -1,0 +1,154 @@
+body {
+  color: #000;
+  overflow-x: hidden;
+  height: 100%;
+  background: linear-gradient(#01579b, #03a9f4);
+  background-repeat: no-repeat;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Allerta+Stencil&display=swap");
+
+body {
+  background-color: #eee;
+}
+
+.navbar-nav > li > a {
+  text-transform: uppercase;
+  font-size: 12px;
+  margin-right: 20px;
+  color: #fff;
+}
+
+.navbar-toggler {
+  padding: 0.2rem 0.5rem;
+  font-size: 1.25rem;
+  line-height: 1;
+  background-color: transparent;
+  border: 1px solid white;
+}
+
+.nav-link {
+  color: #fff !important;
+}
+
+.wrapper {
+  width: 100%;
+  position: absolute;
+  height: 100%;
+  background-color: #000;
+  clip-path: polygon(81% 0, 100% 0, 100% 50%, 100% 100%, 71% 100%);
+  transition: 1s all;
+}
+
+.navbar-brand {
+  color: #fff;
+  font-family: "Allerta Stencil", sans-serif;
+  margin-bottom: 4px;
+  font-size: 27px;
+}
+
+.navbar-red:hover .wrapper {
+  clip-path: polygon(81% 0, 100% 0, 100% 50%, 100% 100%, 65% 100%);
+}
+
+.navbar-brand:hover {
+  color: #fff;
+}
+
+.navbar-red {
+  background-color: red;
+  color: #fff;
+}
+
+.all-show {
+  z-index: 10;
+}
+
+.card-main {
+  padding: 50px;
+  border-radius: 10px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  box-shadow: 0px 4px 8px 0px #283593;
+}
+
+.card-0 {
+  color: #fff;
+  background-color: #536dfe;
+  position: relative;
+  margin-left: 70px;
+  border-radius: 10px;
+  min-height: 312px;
+}
+
+.carousel-indicators li {
+  cursor: pointer;
+  border-radius: 50% !important;
+  width: 10px;
+  height: 10px;
+}
+
+.profile {
+  color: #000;
+  background-color: #ffd54f;
+  position: absolute;
+  left: -70px;
+  top: 17%;
+  border-radius: 8px;
+  border-top-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+}
+
+.profile-pic {
+  width: 120px;
+  height: 120px;
+  border-bottom-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.open-quotes {
+  margin-left: 130px;
+  margin-top: 100px;
+}
+
+.content {
+  margin-left: 150px;
+  margin-right: 80px;
+}
+
+.close-quotes {
+  margin-bottom: 100px;
+  margin-right: 60px;
+}
+
+@media screen and (max-width: 600px) {
+  .card-main {
+    padding: 50px 10px;
+  }
+
+  .card-0 {
+    min-height: 432px;
+  }
+
+  .profile {
+    top: 24%;
+  }
+
+  .profile-pic {
+    width: 90px;
+    height: 90px;
+  }
+
+  .open-quotes {
+    margin-left: 100px;
+  }
+
+  .content {
+    margin-left: 120px;
+    margin-right: 50px;
+  }
+
+  .close-quotes {
+    margin-right: 30px;
+  }
+}
